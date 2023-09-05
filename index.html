@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Üst Kısım -->
+  <header>
+    <h1>Easy Pick Commerce</h1>
+
+    <input type="text" placeholder="Enter the product name..." />
+
+    <div>
+      <button class="btn" id="basket">Basket <i class="fa-solid fa-basket-shopping"></i></button>
+      <a href="/logIn.html" target="_blank"><button class="btn">Sign up <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+    </div>
+  </header>
+  <!--  Ana İçerik -->
+  <main>
+    <!-- Kategoriler -->
+    <section id="category-sec">
+      <h1>Category</h1>
+      <div class="categories"></div>
+    </section>
+    <!-- Ürünler -->
+    <section>
+      <h1>Products</h1>
+      <div class="products"></div>
+    </section>
+  </main>
+
+  <!-- Modal (Sepet Penceresi)-->
+  <div class="modal-wrapper">
+    <div class="modal">
+      <div id="icon">
+        <img id="close" src="/images/e-close.png" />
+      </div>
+      <div id="list"></div>
+      <p id="total">
+        <span id="count">0 ürün</span> Toplam:
+        <span id="total-price">0</span> &#8378;
+      </p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
